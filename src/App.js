@@ -21,14 +21,20 @@ class App extends Component {
           isLoading: false,
           blocks: data
         })
-        console.log("state", this.state.blocks)
       })
+  }
+
+  createTable = () => {
+    // Each block gets a table
+    // Each key/value pair gets a row <tr>
+    // Each key gets a <td>
+    // Each value gets a <td>
   }
 
   render() {
     if (this.state.isLoading) {
       return (
-        <Row class="preload">
+        <Row className="preload">
           <Col s={4}>
             <Preloader flashing />
           </Col>
@@ -36,7 +42,7 @@ class App extends Component {
       )
     }
 
-    return <p>{this.state.blocks}</p>
+    return <table>{this.createTable()}</table>
   }
 }
 
