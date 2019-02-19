@@ -21,14 +21,35 @@ class App extends Component {
           isLoading: false,
           blocks: data
         })
+        console.log(this.state.blocks)
       })
+      .catch(console.error)
   }
 
-  createTable = () => {
+  createTables = () => {
     // Each block gets a table
     // Each key/value pair gets a row <tr>
     // Each key gets a <td>
     // Each value gets a <td>
+
+    return this.state.blocks.map(block => {
+      return (
+        <table>
+          <tbody>{this.createRows(block)}</tbody>
+        </table>
+      )
+    })
+  }
+
+  createRows = block => {
+    return Object.keys(block).map(key => {
+      return (
+        <tr>
+          <td>{key}</td>
+          <td>{block[key]}</td>
+        </tr>
+      )
+    })
   }
 
   render() {
@@ -42,7 +63,7 @@ class App extends Component {
       )
     }
 
-    return <table>{this.createTable()}</table>
+    return <div>{this.createTables()}</div>
   }
 }
 
