@@ -12,3 +12,36 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+main {
+  padding: 2em;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.brand-logo {
+  padding-left: 1em !important;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.values {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.nav-wrapper {
+  padding-right: 1em;
+}
