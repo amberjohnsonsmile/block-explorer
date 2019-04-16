@@ -17,6 +17,10 @@ main {
   padding: 2em;
 }
 
+.preloader {
+  margin-top: 20%;
+}
+
 h1 {
   font-size: 3em;
   text-align: center;

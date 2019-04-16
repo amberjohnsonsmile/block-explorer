@@ -62,7 +62,7 @@ class App extends Component {
         <div>
           <Nav />
           <Row className="preload center">
-            <Col s={4}>
+            <Col className="preloader" s={12}>
               <Preloader flashing />
             </Col>
           </Row>
@@ -75,7 +75,7 @@ class App extends Component {
         <Nav />
         <main>
           <h1>Blocksplorer</h1>
-          <h2>Exploring the Ethereum blockchain</h2>
+          <h2>Splorin' the Ethereum blockchain</h2>
           <Collapsible>{this.createTables()}</Collapsible>
         </main>
       </div>
