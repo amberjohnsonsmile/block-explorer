@@ -1,5 +1,5 @@
 # Ethereum Block Explorer
-View the latest blocks for the Ethereum blockchain on a React frontend.
+View the latest blocks for the Ethereum blockchain on a React frontend. Visit the deployed app [here](https://thawing-mountain-91932.herokuapp.com/).
 
 [View backend code](https://github.com/amberjohnsonsmile/block-explorer-backend)
 
