@@ -1,15 +1,15 @@
-import React, { Component } from "react"
+import React, {Component} from 'react'
 import {
   Collapsible,
   CollapsibleItem,
   Col,
   Row,
   Preloader
-} from "react-materialize"
-import "./App.css"
-import { Nav } from "./Nav"
+} from 'react-materialize'
+import './App.css'
+import {Nav} from './Nav'
 
-const url = "http://localhost:3001"
+const url = 'https://morning-sea-95309.herokuapp.com/'
 
 class App extends Component {
   constructor() {
@@ -36,7 +36,7 @@ class App extends Component {
   createTables = () => {
     return this.state.blocks.map(block => {
       return (
-        <CollapsibleItem header={"Block " + block.number}>
+        <CollapsibleItem header={'Block ' + block.number}>
           <table>
             <tbody>{this.createRows(block)}</tbody>
           </table>
@@ -49,7 +49,7 @@ class App extends Component {
     return Object.keys(block).map(key => {
       return (
         <tr>
-          <td style={{ width: "15%" }}>{key}</td>
+          <td style={{width: '15%'}}>{key}</td>
           <td className="values">{block[key]}</td>
         </tr>
       )
